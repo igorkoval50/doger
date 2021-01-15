@@ -1,14 +1,5 @@
 .sw-cms-preview-image-text-reversed {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-column-gap: 20px;
-    padding: 15px;
-    background: #090909;
-    color: #D9DADB;
-    h2 {
-        color: #D9DADB;
-    }
-    .color-yellow {
-        color: #EB6807;
-    }
 }

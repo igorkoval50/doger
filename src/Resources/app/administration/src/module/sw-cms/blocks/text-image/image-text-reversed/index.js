@@ -22,13 +22,13 @@ Shopware.Service('cmsService').registerCmsBlock({
                     content: {
                         source: 'static',
                         value: `
-                                <p class="headline-uppercase"><span class="color-yellow">+</span> HANDGESCHMIEDETE SEELENSTÜCKE</p>
-                                <h2>Messerschmied Martin Huber</h2>
-                                <p>Ich habe mich auf die Herstellung handgemachter Küchenmesser, Jagdmesser und Outdoormesser spezialisiert.
-                                    Mein Team und ich schmieden alle Klingen selbst - von der Herstellung aufwändiger Damaststähle über die Formgebung bis hin zur Detailarbeit findet der ganze Prozess in meiner Werkstatt in Garsten in Oberösterreich statt.
-                                    Der Großteil unserer Arbeiten sind auf Kundenwunsch hin gefertigte Einzelstücke. Gerne fertigen wir auch für Sie ein Unikat nach Ihren Wunschvorstellungen.
-                                    Ich freue mich auf Ihre Anfrage!</p>
-                                <a href="#">Erfahre mehr <span class="color-yellow"> > </span></a>
+                                <div class="top-text">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="42" height="162" viewBox="0 0 42 162">
+                                  <text id="_" data-name="„" transform="translate(0 126)" fill="#fff" font-size="135" font-family="LeagueGothic-Regular, League Gothic" letter-spacing="0.027em" opacity="0.902"><tspan x="0" y="0">„</tspan></text>
+                                </svg>
+                                </div>
+                                <h2>Unser Ziel ist es, Tiernahrung zu entwickeln, die ohne Wenn und Aber die tatsächlichen Bedürfnisse der Tiere in den Mittelpunkt stellt.</h2>
+                                <p>- Leitsatz von Claus und Jörg Lefers</p>
                         `.trim()
                     }
                 }
@@ -42,7 +42,7 @@ Shopware.Service('cmsService').registerCmsBlock({
                 },
                 data: {
                     media: {
-                        url: '/huberknives/static/img/cms/person.jpg'
+                        url: '/doger/static/img/cms/dog.jpg'
                     }
                 }
             }

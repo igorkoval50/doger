@@ -1,14 +1,16 @@
 .sw-cms-block-image-text-reversed {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: 1fr;
     grid-gap: 40px;
-    a {
-        color: #52667a;
-        text-decoration: none;
-        margin-top: 20px;
-        display: block;
-    }
-    .color-yellow {
-        color: #EB6807;
+    .sw-cms-slot:first-child {
+        position: absolute;
+        max-width: 70%;
+        left: 10%;
+        height: 90%;
+        top: 15%;
+        z-index: 10;
+        .top-text {
+            font-size: 70px;
+        }
     }
 }
