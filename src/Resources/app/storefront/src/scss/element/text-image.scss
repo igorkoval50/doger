@@ -1,0 +1,102 @@
+@media screen and(min-width: 1px) {
+  .cms-block-image-text-reversed, .cms-block-image-text-custom {
+    img {
+      height: 320px;
+      object-fit: cover;
+    }
+    .cms-element-image {
+      margin-bottom: 30px;
+    }
+  }
+}
+@media screen and(min-width: 540px) {
+  .cms-block-image-text-reversed, .cms-block-image-text-custom {
+    .col-sm-6 {
+      min-width: 100%;
+    }
+    img {
+      height: 620px;
+      object-fit: cover;
+    }
+  }
+}
+@media screen and(min-width: 720px) {
+  .cms-block-image-text-reversed, .cms-block-image-text-custom {
+    .col-sm-6 {
+      min-width: auto;
+    }
+    img {
+      height: 410px;
+      object-fit: cover;
+    }
+    .cms-element-image {
+      margin-bottom: 0;
+    }
+  }
+}
+@media screen and(min-width: 960px) {
+  .cms-block-image-text-reversed, .cms-block-image-text-custom {
+    img {
+      height: 535px;
+      object-fit: cover;
+    }
+  }
+}
+@media screen and(min-width: 1140px) {
+  .cms-block-image-text-reversed, .cms-block-image-text-custom {
+    img {
+      height: 560px;
+      object-fit: cover;
+    }
+  }
+}
+@media screen and(min-width: 1300px) {
+  .cms-block-image-text-custom {
+    .col-sm-6:first-child {
+      padding: 0;
+    }
+    .col-sm-6:last-child {
+      padding-left: 33px;
+      padding-right: 0;
+      display: flex;
+      align-items: center;
+    }
+  }
+  .cms-block-image-text-reversed {
+    .col-sm-6:last-child {
+      padding: 0;
+    }
+    .col-sm-6:first-child {
+      padding-right: 33px;
+      padding-left: 0;
+      display: flex;
+      align-items: center;
+    }
+  }
+  .cms-block-image-text-reversed, .cms-block-image-text-custom  {
+    img {
+      height: 750px;
+      max-width: 100%;
+      object-fit: cover;
+      width: 100%;
+    }
+    P {
+      margin-bottom: 40px;
+    }
+    .headline-uppercase {
+      margin-bottom: 28px;
+    }
+    h2 {
+      margin-bottom: 13px;
+    }
+  }
+}
+
+@media screen and(max-width: 720px) {
+  .cms-block-image-text-reversed {
+    .cms-block-container .cms-block-container-row {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
+}
