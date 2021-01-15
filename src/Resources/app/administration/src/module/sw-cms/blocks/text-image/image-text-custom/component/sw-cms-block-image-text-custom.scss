@@ -1,0 +1,9 @@
+.sw-cms-block-image-text-custom {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 40px;
+    .btn-primary {
+        display: inline-block;
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,32 @@
+{% sw_extends '@Storefront/storefront/base.html.twig' %}
+
+{% block base_head %}
+    {{ parent() }}
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+{% endblock %}
+
+
+
+
+ {% block base_script_hmr_mode %}
+     {{ parent() }}
+     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+     <script>
+         var swiper = new Swiper('.swiper-container', {
+             direction: 'vertical',
+             autoplay: {
+                 delay: 4000,
+                 disableOnInteraction: false,
+             },
+             pagination: {
+                 el: '.swiper-pagination',
+                 clickable: true,
+                 renderBullet: function (index, className) {
+                     return '<span class="' + className + '">' + '<span class="bull-text">' + 0 + (index + 1) + '</span>' + '</span>';
+                 },
+             },
+         });
+     </script>
+ {% endblock %}
