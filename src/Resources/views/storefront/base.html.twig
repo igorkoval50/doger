@@ -35,6 +35,9 @@
              pagination: {
                  el: '.swiper-pagination',
                  clickable: true,
+                 renderBullet: function (index, className) {
+                     return '<span class="' + className + '">' + '<span class="bull-text">' + (index + 1) + '</span>' + '</span>';
+                 }
              },
              navigation: {
                  nextEl: '.swiper-button-next',
