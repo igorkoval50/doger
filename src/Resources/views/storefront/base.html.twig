@@ -2,6 +2,7 @@
 
 {% block base_head %}
     {{ parent() }}
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
@@ -15,11 +16,10 @@
      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
      <script>
          var swiper = new Swiper('.swiper-container', {
-             direction: 'vertical',
-             autoplay: {
-                 delay: 4000,
-                 disableOnInteraction: false,
-             },
+             // autoplay: {
+             //     delay: 4000,
+             //     disableOnInteraction: false,
+             // },
              pagination: {
                  el: '.swiper-pagination',
                  clickable: true,
@@ -27,6 +27,20 @@
                      return '<span class="' + className + '">' + '<span class="bull-text">' + 0 + (index + 1) + '</span>' + '</span>';
                  },
              },
+         });
+
+         var swipers = new Swiper('.swiper-containers', {
+             slidesPerView: 1,
+             spaceBetween: 30,
+             pagination: {
+                 el: '.swiper-pagination',
+                 clickable: true,
+             },
+             navigation: {
+                 nextEl: '.swiper-button-next',
+                 prevEl: '.swiper-button-prev',
+             },
+             loop: true,
          });
      </script>
  {% endblock %}
